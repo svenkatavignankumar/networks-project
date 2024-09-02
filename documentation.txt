@@ -1,0 +1,26 @@
+-------------------------- Data Structures & Variables-----------------------------------------
+
+message : struct type
+    buf -> stores the content of  message
+    len -> stores length of content 
+    flags -> stores flags provided by user
+
+send_buffer : message ** type
+    equivalent to Send_message table
+    can stores a maximum of 10 messages
+
+recv_buffer : message** type
+    equivalent to Recv_message table
+    can stores a maximum of 10 messages
+
+NOTE : We have considerd this problem as equivalent to bounded buffer producer consumer problem.
+
+send_count : int type
+    stores no of messages currently in send table
+
+recv_count : int type
+    stores no of messages currently in recv table
+
+send_in : int type
+    stores the index in circular buffer where next element need to be inserted
+    
